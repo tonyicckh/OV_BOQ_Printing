@@ -251,6 +251,7 @@
     <EmbeddedResource Include="Reports\GoodsReceipt.rdlc" />
     <EmbeddedResource Include="Reports\GRForm.rdlc" />
     <EmbeddedResource Include="Reports\GRPOForm.rdlc" />
+    <EmbeddedResource Include="Reports\Item_Stock_Report.rdlc" />
     <EmbeddedResource Include="Reports\PO_Form_V1.rdlc" />
     <EmbeddedResource Include="Reports\PO_Form.rdlc" />
     <EmbeddedResource Include="Reports\PRForm.rdlc" />

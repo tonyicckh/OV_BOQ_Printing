@@ -63,6 +63,17 @@ namespace CustomFrameViewer
                     rpturl = "GoodsReceipt.rdlc";
                     displayname = "Goods Receipt";
                 }
+                else if (rpttype == "50")
+                {
+                    string moduletype = Request.QueryString["moduletype"];
+                    string project = Request.QueryString["project"];
+                    string status = Request.QueryString["status"];
+                    string fromdate = Request.QueryString["fromdate"];
+                    string todate = Request.QueryString["todate"];
+                    sql = $@"exec ICC_Report_Item_Stock '{moduletype}', '{status}', '{project}', '{fromdate}', '{todate}'";
+                    rpturl = "Item_Stock_Report.rdlc";
+                    displayname = "Item Trasaction Report";
+                }
 
                 Page.Title = displayname;
 

@@ -8,9 +8,10 @@
     <style>
         /* Center the report viewer container */
         .report-container {
-            width: 80%;  /* You can adjust this value */
+            width: 100% !important;  /* You can adjust this value */
             margin: 0 auto;  /* Centers the container horizontally */
             text-align: center;  /* Centers the content inside */
+
         }
     </style>
 </head>
@@ -25,10 +26,11 @@
                 ID="ReportViewer1" 
                 runat="server" 
                 Width="100%" 
-                Height="600px" 
                 ShowToolBar="True" 
                 PrintMode="PrintLayout" 
-                RenderingMode="Local">
+                RenderingMode="Local" 
+                SizeToReportContent="True"
+                AsyncRendering="False">
             </rsweb:ReportViewer>
         </div>
     </form>
